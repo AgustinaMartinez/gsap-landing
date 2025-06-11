@@ -1,0 +1,108 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-section h1, 
+#hero-section canvas,
+#title-section h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+#hero-section h1 {
+  color: white;
+  position: fixed;
+  left: 50%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  font-size: 12vw;
+  width: 100%;
+  text-align: center;
+  letter-spacing: -2px;
+  filter: drop-shadow(0px 0px 10px rgba(219, 193, 193, 0.6));
+}
+
+#hero-section canvas {
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1068/600;
+  width: 100%;
+}
+
+#marvel-container .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 80%;
+  max-width: 900px;
+}
+
+#marvel-container .grid img {
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#title-section h2 {
+  text-wrap: balance;
+  color: white;
+  font-size: 8vw;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+}
+
+#boxes-section {
+  flex-direction: column;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.box.purple {
+  background: rebeccapurple;
+}
+
+.box.blue {
+  background: blue;
+}
+
+.box.yellow {
+  background: yellow;
+}
+
+@media (max-width: 768px) {
+  #hero-section h1 {
+    font-size: 16vw;
+    top: 32%;
+  }
+}
