@@ -31,13 +31,12 @@ section {
   color: white;
   position: fixed;
   left: 50%;
-  top: 34%;
+  top: 30%;
   transform: translate(-50%, -50%);
-  font-size: 12vw;
+  font-size: 14vw;
   width: 100%;
   text-align: center;
   letter-spacing: -2px;
-  filter: drop-shadow(0px 0px 10px rgba(219, 193, 193, 0.6));
 }
 
 #hero-section canvas {
@@ -103,6 +102,11 @@ section {
 @media (max-width: 768px) {
   #hero-section h1 {
     font-size: 16vw;
-    top: 32%;
+    top: 52%;
+    filter: drop-shadow(0px 0px 10px rgba(219, 193, 193, 0.6));
+  }
+
+  #hero-section canvas {
+    width: 150%;
   }
 }
